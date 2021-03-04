@@ -90,7 +90,7 @@ namespace UnityExplorer.UI
 
         private static AssetBundle LoadExplorerUi(string id)
         {
-            return AssetBundle.LoadFromMemory(ReadFully(typeof(ExplorerCore).Assembly.GetManifestResourceStream($"UnityExplorer.Resources.explorerui.{id}.bundle")));
+            return AssetBundle.LoadFromMemory(ReadFully(typeof(ExplorerCore).Assembly.GetManifestResourceStream($"NomaiExplorer.Resources.explorerui.{id}.bundle")));
         }
 
         private static byte[] ReadFully(this Stream input)

@@ -1,0 +1,10 @@
+{
+  "filename": "NomaiExplorer.dll",
+  "author": "artum",
+  "name": "NomaiExplorer",
+  "uniqueName": "Artum.NomaiExplorer",
+  "description": "UnityExplorer module for Outer Wilds.",
+  "version": "1.0.0",
+  "owmlVersion": "1.0.1",
+  "requireVR": false
+}

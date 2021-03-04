@@ -1,4 +1,4 @@
-﻿#if STANDALONE
+﻿#if STANDALONE && !OWML
 using HarmonyLib;
 
 namespace UnityExplorer

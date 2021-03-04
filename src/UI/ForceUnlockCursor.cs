@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityExplorer.Input;
 using BF = System.Reflection.BindingFlags;
 using UnityExplorer.Config;
-#if ML
+#if ML || OWML
 using Harmony;
 #else
 using HarmonyLib;
@@ -107,8 +107,10 @@ namespace UnityExplorer.UI
                     ExplorerMelonMod.Instance.harmonyInstance;
 #elif BIE
                     ExplorerBepInPlugin.HarmonyInstance;
-#elif STANDALONE
+#elif STANDALONE && !OWML
                     ExplorerStandalone.HarmonyInstance;
+#elif OWML
+                    ExplorerOWML.HarmonyInstance;
 #endif
 
                 System.Reflection.PropertyInfo prop = type.GetProperty(property);
