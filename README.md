@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  An in-game explorer and a suite of debugging tools for <a href="https://docs.unity3d.com/Manual/IL2CPP.html">IL2CPP</a> and <b>Mono</b> Unity games, to aid with modding development.
+  An in-game explorer and a suite of debugging tools adapted for use with Outer Wilds Mod Loader.
 </p>
 <p align="center">
   <a href="../../releases/latest">
@@ -44,27 +44,6 @@
 * <b>Inspect-under-mouse</b>: Hover over an object with a collider and inspect it by clicking on it.
 
 ## How to install
-
-### BepInEx
-
-0. Install [BepInEx](https://github.com/BepInEx/BepInEx) for your game.
-1. Download the UnityExplorer release for BepInEx IL2CPP or Mono above.
-2. Take the `UnityExplorer.BIE.___.dll` file and put it in `[GameFolder]\BepInEx\plugins\`
-3. In IL2CPP, it is highly recommended to get the base Unity libs for the game's Unity version and put them in the `BepInEx\unity-libs\` folder. 
-
-### MelonLoader
-
-0. Install [MelonLoader](https://github.com/HerpDerpinstine/MelonLoader) for your game.
-1. Download the UnityExplorer release for MelonLoader IL2CPP or Mono above.
-2. Take the contents of the release and put it in the `[GameFolder]\Mods\` folder. It should look like `[GameFolder]\Mods\UnityExplorer.ML.___.dll`
-
-### Standalone
-
-0. Load the DLL from your mod or inject it.
-1. Create an instance of Unity Explorer with `new ExplorerCore();`
-2. You will need to call ExplorerCore.Update() (static method) from your Update method.
-3. Subscribe to the `ExplorerCore.OnLog__` methods for logging.
-
 ## Mod Config
 
 You can access the settings via the "Options" page of the main menu, or directly from the config at `Mods\UnityExplorer\config.ini` (generated after first launch).
