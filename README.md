@@ -6,7 +6,8 @@ This mod is meant as a development tool.
 
 ## Credits
 
-[UnityExplorer](https://github.com/sinai-dev/UnityExplorer) written by Sinai.
+* [UnityExplorer](https://github.com/sinai-dev/UnityExplorer) written by Sinai.
+* [OWML](https://github.com/amazingalek/owml) nebula/alek/Raicuparta for showing me the ways.
 
 ### Licensing
 
